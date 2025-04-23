@@ -269,7 +269,7 @@ int main(int argc, char** argv)
   if(pid2 == 0)
   {
     // Second child process
-	system("python3 /root/python/Network2.py &");
+	system("python3 /root/pid2/Network2.py &");
 	std::this_thread::sleep_for(std::chrono::seconds(50));
 
 	std::string pipe1 = "/tmp/pipe1";  
